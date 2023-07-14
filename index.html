@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form method="post" action="formulario.php">
+            <fieldset>
+                <legend>Completa tus datos personales</legend>
+
+                <label for="nombres"> Nombre</label>
+                <input type="text" id="nombres" name="NOMBRES" title="Escribe tus nombres" required size="20">
+                <br>
+
+                <label for="apellido"> Apellido</label>
+                <input type="text" id="apellido" name="APELLIDO" title="Escribe tu apellido" required size="20">
+                <br>
+
+                <label for="email"> Email</label>
+                <input type="email" id="email" name="EMAIL"
+                    title="Escribe tu email respetando el siguiente formato, nombre de usuario, luego el simbolo de arroba y por ultimo el dominio, "
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" size="30" required>
+                <br>
+
+                <label for="celular">celular:</label>
+                <input type="tel" id="celular" name="CELULAR"
+                    title="Ingresa el numero de tu celular incluyendo tu el codigo de area, por ejemplo 011"
+                    pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+
+                <input type="checkbox" id="chbx" name="Acepto" title="click si aceptas" value="Si!" />
+                <label for="chbx">Si</label>
+
+                <button>Enviar</button>
+            </fieldset>
+
+
+        </form>
+
+        <form action="#">
+            <fieldset>
+                <legend>Estas de acuerdo?</legend>
+                <input type="checkbox" id="chbx" name="agree" value="Si!" />
+                <label for="chbx">Si</label>
+                <input type="checkbox" id="chbx" name="agree" value="no!" />
+                <label for="chbx">No</label>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
